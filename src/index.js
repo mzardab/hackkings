@@ -7,7 +7,6 @@ import request from 'request';
 //import config from './config';
 
 
-
 const app = express();
 app.use(bodyParser.json());
 
@@ -53,6 +52,9 @@ app.get('/public', (req, res, next) =>  {
 //        }
 //     });
 // });
+
+//Authentication for monzo API
+
 
 // Error Handlers
 app.use((req, res, next) => {

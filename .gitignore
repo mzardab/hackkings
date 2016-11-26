@@ -49,6 +49,7 @@ Temporary Items
 # Dependencies
 node_modules/
 .npm/
+config/
 
 # Build
 dist/
