@@ -4,11 +4,12 @@ import http from 'http';
 import request from 'request';
 
 // Config file for API key for Capital One API 
-//import config from './config';
 
 
 const app = express();
 app.use(bodyParser.json());
+
+var config = require( "../config/config.js" );
 
 app.use(express.static('public'));
 
@@ -29,7 +30,6 @@ app.get('/', (req, res, next) =>  {
 app.get('/public', (req, res, next) =>  {
     res.status(200).sendfile('public');
 });
-
 
 // app.get('/atms', (req, res, next) => {
 //     request(`http://api.reimaginebanking.com/atms?key=${config.nessieApiKey}`, (err, response, body) => {
