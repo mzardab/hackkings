@@ -1,0 +1,19 @@
+{
+  "name": "hackkings",
+  "version": "1.0.0",
+  "description": "An application developed at HackKings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzardab/hackkings.git"
+  },
+  "author": "Luke Exton, Moad Zardab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzardab/hackkings/issues"
+  },
+  "homepage": "https://github.com/mzardab/hackkings#readme"
+}
