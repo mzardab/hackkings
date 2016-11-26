@@ -6,6 +6,8 @@ import request from 'request';
 // Config file for API key for Capital One API 
 //import config from './config';
 
+
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -18,6 +20,11 @@ app.get('/hello/:name', (req, res, next) => {
     const name = req.params.name;
     res.status(200).json({message: `Hello, ${name}!`});
 });
+
+app.get('/', (req, res, next) =>  {
+    res.status(200).sendfile('index.html');
+});
+
 
 // app.get('/atms', (req, res, next) => {
 //     request(`http://api.reimaginebanking.com/atms?key=${config.nessieApiKey}`, (err, response, body) => {
