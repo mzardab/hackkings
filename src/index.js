@@ -22,7 +22,7 @@ app.get('/hello/:name', (req, res, next) => {
 });
 
 app.get('/', (req, res, next) =>  {
-    res.status(200).sendfile('index.html');
+    res.status(200).sendfile('public/view/index.html');
 });
 
 
